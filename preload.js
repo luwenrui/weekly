@@ -79,7 +79,9 @@ window.exports = {
       args: {
          enter: () => {
             dp = utools.getPath('home') + '/' + 'weekly' + '.json'
-            fs.writeFile(dp, JSON.stringify([]), function (err, data) { })
+            fs.writeFile(dp, JSON.stringify([]), function (err, data) {
+               utools.showNotification('清空成功')
+            })
          }
       }
    },
@@ -105,6 +107,7 @@ window.exports = {
                      if (err) {
                         utools.showNotification(err)
                      }
+                     utools.showNotification('导出成功')
                      utools.shellShowItemInFolder(dp)
                   })
                }
