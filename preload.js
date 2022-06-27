@@ -16,6 +16,7 @@ function writeFile(text) {
             if (err) {
                utools.showNotification(err)
             }
+            utools.showNotification('添加成功')
          })
 
       } else {
@@ -29,6 +30,7 @@ function writeFile(text) {
             if (err) {
                utools.showNotification(err)
             }
+            utools.showNotification('添加成功')
          })
       }
    })
