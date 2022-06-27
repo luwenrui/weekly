@@ -1,0 +1,43 @@
+{
+	"logo": "logo.png",
+	"preload": "preload.js",
+	"platform": [
+		"win32",
+		"darwin",
+		"linux"
+	],
+	"pluginSetting": {
+		"single": true,
+		"height": 0
+	},
+	"features": [
+		{
+			"code": "zb_add",
+			"explain": "周报添加",
+			"cmds": [
+				"zb_add"
+			]
+		},
+		{
+			"code": "zb_list",
+			"explain": "周报查看",
+			"cmds": [
+				"zb_ls"
+			]
+		},
+		{
+			"code": "zb_clear",
+			"explain": "周报清理",
+			"cmds": [
+				"zb_cl"
+			]
+		},
+		{
+			"code": "zb_exprot",
+			"explain": "周报导出",
+			"cmds": [
+				"zb_ex"
+			]
+		}
+	]
+}
